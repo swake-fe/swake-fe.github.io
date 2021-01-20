@@ -1,0 +1,58 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main article article'
+    'footer footer footer footer footer footer';
+  grid-template-columns: 'auto auto auto auto auto auto';
+  grid-template-rows: '200px auto 150px';
+  justify-content: center;
+  padding: 5px;
+}
+
+.body{
+  font-family: arial;
+  padding: 15px;
+  background-color: #f1f1f1;
+}
+
+
+.blog-header{
+  font-family: arial;
+  padding: 15px 15px 20px 15px;
+  font-size: 15px;
+  background-color: grey;
+  text-align: center;
+}
+
+
+.author-bio{
+font-family: arial;
+font-size: 12px;
+display: flex;
+flex-direction: row;
+padding: 15px 10px 15px 10px;
+}
+
+
+.blog-content{
+display: flex;
+flex-direction: row;
+font-family: arial;
+padding: 15px;
+}
+
+
+.plant-photo{
+width: 410px;
+height: 410px;
+}
+
+footer{
+  padding: 20px;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline;
+  text-align: center;
+  background-color: #ddd;
+}
