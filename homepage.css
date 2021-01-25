@@ -47,7 +47,8 @@ li{
   padding: 5px;
 }
 
-.left {
+.left{
+  grid-area: left;
   box-sizing: border-box;
   flex-direction: wrap;
   border-radius: 5px;
@@ -56,6 +57,24 @@ li{
   align-content: center;
 
 }
+ .middle{
+   grid-area: middle;
+   box-sizing: border-box;
+   flex-direction: wrap;
+   border-radius: 5px
+   border: 2px blue;
+   background-color: #e6dfdf
+  }
+  
+  .right{
+    grid-area: right;
+    box-sizing: border-box;
+    flex-direction: wrap;
+    border-radius: 5px;
+    border 1px blue;
+    background-color: #c4c4c4;
+  }
+  
 .body{
 font-family: arial, sans-serif;
 padding: 15px;
@@ -65,6 +84,7 @@ background-color: #f1f1f1;
 
 .site-header{
 padding: 30px;
+font-family: Arial, Helvetica, sans-serif;
 font-size: 35px;
 text-align: center;
 background-color: white;
