@@ -1,4 +1,4 @@
-@import ('/blogpost.css')
+@import ('home/wakelan2/github/swake-fe.github.io/blogpost.css')
 
 @media only screen and (max-width: 320px);
   .media-container{
@@ -58,12 +58,15 @@ li{
 
 p.one, p.two, p.three {
   flex-direction: row;
+  border-radius: 5px;
+  border: 2px blue;
   align-content: stretch;
 
 }
 .body{
 font-family: arial, sans-serif;
 padding: 15px;
+border-radius: 5px
 background-color: #f1f1f1;
 }
 
