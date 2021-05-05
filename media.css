@@ -1,0 +1,31 @@
+@media only screen and (max-width: 320px)
+  .media-container{
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 250px 600px;
+  grid-template-areas:
+  'header'
+  'main'
+  'footer'
+  border: 2px solid blue;
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px)
+.media-container{
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-areas:
+  'header header header'
+  'main main main'
+  'article article article'
+  'footer footer footer'
+}
+
+@media only screen and (min-width: 901px)
+.media-container{
+  display: grid;
+  grid-template-areas:
+  'header header header header header header'
+  'main main main main article article'
+  'footer footer footer footer footer'
+}

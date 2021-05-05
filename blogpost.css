@@ -1,21 +1,17 @@
-@media (max-width: 600px) {
-  .grid-container  {
-    grid-template-areas: 
-      'header header header header header header' 
-      'left left left left left left' 
-      'middle middle middle middle middle middle' 
-      'right right right right right right' 
-      'footer footer footer footer footer footer';
-  }
 .grid-container {
   display: grid;
-  grid-template-areas: 
-  'header header header header header header' 
-   'left left middle middle right right' 
-   'footer footer footer footer footer footer';
-  grid-gap: 10px;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main article article'
+    'footer footer footer footer footer footer';
+  grid-template-columns: 'auto auto auto auto auto auto';
+  grid-template-rows: '200px auto 150px';
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
 }
-   
+
 .body{
   font-family: arial;
   padding: 15px;
@@ -31,38 +27,15 @@
   text-align: center;
 }
 
-
 .author-bio{
 font-family: arial;
 font-size: 12px;
 display: flex;
 flex-direction: row;
+margin-top: 15px;
 padding: 15px 10px 15px 10px;
 }
 
-.left {
- grid-area: left;
- box-sizing: border-box;
- border-radius: 5px;
- border: 2px blue;
- background-color: #c4c4c4;
-}
-
-.middle{
- grid-area: middle;
- box-sizing: border-box;
- border-radius: 5px;
- border: 2px grey;
- background-color: #bfe3dc
-}
-
-.right{
- grid-area: right;
- box-sizing: border-box;
- border-radius: 5px;
- border: 2px blue;
-}
- 
 .blog-content{
 display: flex;
 flex-direction: row;
@@ -70,17 +43,48 @@ font-family: arial;
 padding: 15px;
 }
 
-
 .plant-photo{
 width: 410px;
 height: 410px;
 }
 
-footer{
+.footer-format{
   padding: 20px;
   font-size: 12px;
   margin-top: 20px;
   display: inline;
   text-align: center;
   background-color: #ddd;
+}
+
+@media only screen and (max-width: 320px)
+  .media-container{
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 250px 600px;
+  grid-template-areas:
+  'header'
+  'main'
+  'footer'
+  border: 2px solid blue;
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px)
+.media-container{
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-areas:
+  'header header header'
+  'main main main'
+  'article article article'
+  'footer footer footer'
+}
+
+@media only screen and (min-width: 901px)
+.media-container{
+  display: grid;
+  grid-template-areas:
+  'header header header header header header'
+  'main main main main article article'
+  'footer footer footer footer footer'
 }

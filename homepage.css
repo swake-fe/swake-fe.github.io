@@ -1,39 +1,6 @@
-@media (max-width: 600px) {
-  .grid-container  {
-    grid-template-areas: 
-      'header header header header header header' 
-      'left left left left left left' 
-      'middle middle middle middle middle middle' 
-      'right right right right right right' 
-      'footer footer footer footer footer footer';
-  }
-
-@media only screen and (min-width: 600px) and (max-width: 900px);
-.grid-container{
-  grid-template-areas:
-  'header header header'
-  'left left''middle middle''right right'
-  'footer footer footer'
-}
-
-@media only screen and (min-width: 901px);
-.media-container{
-  display: grid;
-  grid-template-areas:
-  'header header header header header header'
-  'main main main main article article'
-  'footer footer footer footer footer'
-}
-
-
-.grid-container{
-  display: grid;
-  grid-template-areas: 
- 'header header header header header header' 
- 'left left middle middle right right' 
- 'footer footer footer footer footer footer';
-  grid-column-gap: 10px;
-}
+@import "CSS/media.css";
+@import "CSS/grid.css";
+@import "CSS/feature.css";
 
 #nav{
   margin-top: 20px;
@@ -45,60 +12,22 @@ li{
   padding: 5px;
 }
 
-.left{
-  grid-area: left;
-  box-sizing: border-box;
-  flex-direction: wrap;
-  border-radius: 5px;
-  border: 2px blue;
-  background-color: #c4c4c4;
-  align-content: center;
+p.one, p.two, p.three{
+  flex-direction: row;
+  align-content: stretch;
 
 }
- .middle{
-   grid-area: middle;
-   box-sizing: border-box;
-   flex-direction: wrap;
-   border-radius: 5px
-   border: 2px blue;
-   background-color: #e6dfdf
-  }
-  
-  .right{
-    grid-area: right;
-    box-sizing: border-box;
-    flex-direction: wrap;
-    border-radius: 5px;
-    border 1px blue;
-    background-color: #c4c4c4;
-  }
-  
 .body{
 font-family: arial, sans-serif;
 padding: 15px;
-border-radius: 5px
 background-color: #f1f1f1;
 }
 
 .site-header{
 padding: 30px;
-font-family: Arial, Helvetica, sans-serif;
 font-size: 35px;
 text-align: center;
 background-color: white;
-}
-
-
-.button{
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 4px 2px;
-  cursor: pointer;
 }
 
 .blog-body{
@@ -107,29 +36,4 @@ background-color: white;
   font-size: 14px;
   margin-bottom: auto;
   background-color: #e1f2e6;
-}
-
-.card{
-  border-radius: 5px;
-}
-
-.card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-img {
-  border-radius: 5px;
-}
-
-.card-container{
-  float: left;
-  padding: 2px 5px;
-}
-
-.footer{
-  padding: 10px;
-  font-size: 14px;
-  margin-top: 20px;
-  text-align: center;
-  background-color: #ddd;
 }

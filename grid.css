@@ -1,0 +1,12 @@
+.grid-container{
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main article article'
+    'footer footer footer footer footer footer';
+  grid-template-columns: 'auto auto auto auto auto auto';
+  grid-template-rows: '200px auto 150px';
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
